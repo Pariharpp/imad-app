@@ -14,9 +14,9 @@ app.get('/ankesh',function(req,res){
 app.get('/sumedh',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'sumedh.html'));
 });
-/*app.get('/ashwin',function(req,res){
+app.get('/ashwin',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'ashwin.html'));
-});*/
+});
 app.get('/omkar',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'omkar.html'));
 });
