@@ -14,11 +14,14 @@ app.get('/ankesh',function(req,res){
 app.get('/sumedh',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'sumedh.html'));
 });
-app.get('/artical-three',function(req,res){
-    res.send('Artical no. 3');
+app.get('/ashwin',function(req,res){
+   res.sendFile(path.join(__dirname, 'ui', 'ashwin.html'));
 });
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+app.get('/omkar',function(req,res){
+   res.sendFile(path.join(__dirname, 'ui', 'omkar.html'));
+});
+app.get('/shubham',function(req,res){
+   res.sendFile(path.join(__dirname, 'ui', 'shubham.html'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
