@@ -11,8 +11,8 @@ app.get('/', function (req, res) {
 app.get('/ankesh',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'ankesh.html'));
 });
-app.get('/artical-two',function(req,res){
-    res.send('Artical no. 2');
+app.get('/sumedh',function(req,res){
+   res.sendFile(path.join(__dirname, 'ui', 'sumedh.html'));
 });
 app.get('/artical-three',function(req,res){
     res.send('Artical no. 3');
