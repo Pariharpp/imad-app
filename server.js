@@ -11,6 +11,12 @@ app.get('/', function (req, res) {
 app.get('/artical-one',function(req,res){
     res.send('Artical no. 1');
 });
+app.get('/artical-two',function(req,res){
+    res.send('Artical no. 2');
+});
+app.get('/artical-three',function(req,res){
+    res.send('Artical no. 3');
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
