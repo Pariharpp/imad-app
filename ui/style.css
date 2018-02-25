@@ -21,7 +21,5 @@ body {
     width:500px;
 }
 hr{
-    width:150px;
-    margin: 0 auto;
-    color:pink;
+   background-color:pink;
 }
