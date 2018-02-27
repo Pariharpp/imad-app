@@ -8,6 +8,9 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+app.get('/ui/style', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
 app.get('/ankesh',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'ankesh.html'));
 });
@@ -23,9 +26,7 @@ app.get('/omkar',function(req,res){
 app.get('/shubham',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'shubham.html'));
 });
-app.get('/ui/style',function (req,res){
-    res.sendFile(path.join(__dirname,'ui','style.css'));
-});
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
