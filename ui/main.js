@@ -5,8 +5,6 @@ button.onclick = function(){
   
 };
 //Submit button (name)
-var nameInput = document.getElementById('name');
-var submit = document.getElementById('submit_btn');
 submit.onclick =function(){
     //request for server 
     var request= new XMLHttpRequest();
@@ -27,6 +25,8 @@ submit.onclick =function(){
         }
     };
     //Make request 
+    var nameInput = document.getElementById('name');
+    var submit = document.getElementById('submit_btn');
     request.open('GET',"http://pariharprahalad26.imad.hasura-app.io/submit-name?name="+name, true);
     request.send(null);
     
