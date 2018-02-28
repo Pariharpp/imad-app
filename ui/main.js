@@ -28,7 +28,7 @@ submit.onclick =function(){
     //capture list of name
     var name =['name1','name2','name3'];
     var list='';
-    for(var i =0;i<name.lenght;i++){
+    for(var i = 0;i<name.lenght;i++){
         list+= '<li>' +name[i]+'</li>';
     }
    var ul =document.getElementById('namelist');
