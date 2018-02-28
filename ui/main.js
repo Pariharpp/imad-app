@@ -18,3 +18,19 @@ button.onclick = function(){
     request.open('GET',"http://pariharprahalad26.imad.hasura-app.io/counter", true);
     request.send(null);
 };
+//Submit button (name)
+var nameInput = document.getElementById('name');
+var submit = document.getElementById('submit_btn');
+submit.onclick =function(){
+    //request for server 
+    
+    
+    //capture list of name
+    var name =['name1','name2','name3'];
+    var list='';
+    for(var i =0;i<name.lenght;i++){
+        list+= '<li>' +name[i]+'</li>';
+    }
+   var ul =document.getElementById('namelist');
+   ul.innerHTML=list;
+};
