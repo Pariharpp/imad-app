@@ -23,14 +23,27 @@ var nameInput = document.getElementById('name');
 var submit = document.getElementById('submit_btn');
 submit.onclick =function(){
     //request for server 
+    var request= new XMLHttpRequest();
     
-    
-    //capture list of name
-    var name =['name1','name2','name3'];
-    var list='';
-    for(var i = 0;i<(name.lenght);i++){
-        list+= '<li>' +name[i]+'</li>';
+    // capture the response  and store it 
+    request.onreadystatechange = function(){
+        if(request.readystate === XMLHttpRequest.DONE){
+            if(request.status===200){
+                var names=request.responseText;
+                names=JSON.parse(names);
+                var list='';
+                for(var i = 0;i<(name.lenght);i++){
+                 list+= '<li>' +name[i]+'</li>';
     }
    var ul =document.getElementById('namelist');
    ul.innerHTML=list;
+            }
+        }
+    };
+    //Make request 
+    request.open('GET',"http://pariharprahalad26.imad.hasura-app.io/submit-name?name="+name, true);
+    request.send(null);
+    
+    //capture list of name
+    
 };
