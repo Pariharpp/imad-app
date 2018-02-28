@@ -1,6 +1,5 @@
 //counter code
 var button= document.getElementById('counter');
-var counter =0;
 button.onclick = function(){
     // Create Request for counter end piont
     var request= new XMLHttpRequest();
@@ -15,7 +14,6 @@ button.onclick = function(){
             }
         }
     };
-    counter=counter +1;
     //Make request 
     request.open('GET',"http://pariharprahalad26.imad.hasura-app.io/counter", true);
     request.send(null);
