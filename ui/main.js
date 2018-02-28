@@ -2,7 +2,7 @@
 var button= document.getElementById('counter');
 button.onclick = function(){
     // Create Request for counter end piont
-    var request= new XMLHttpRequest();
+  /*  var request= new XMLHttpRequest();
     
     // capture the response  and store it 
     request.onreadystatechange = function(){
@@ -16,7 +16,7 @@ button.onclick = function(){
     };
     //Make request 
     request.open('GET',"http://pariharprahalad26.imad.hasura-app.io/counter", true);
-    request.send(null);
+    request.send(null);*/
 };
 //Submit button (name)
 var nameInput = document.getElementById('name');
