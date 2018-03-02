@@ -23,7 +23,7 @@ app.get('/counter',function(req,res){
     counter=counter+1;
     res.send(counter.toString());
 });
-var pool= new Pool(config);
+/*var pool= new Pool(config);
 app.get('/test',function(req,res){
     //make select requ.
     
@@ -38,7 +38,7 @@ app.get('/test',function(req,res){
     });
     
     
-});
+});*/
 app.get('/ankesh',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'ankesh.html'));
 });
