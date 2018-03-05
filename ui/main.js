@@ -17,6 +17,7 @@ button.onclick = function(){
         
 };
 //Submit button (name)
+var submit =document.getElementById('submit=btn');
 submit.onclick =function(){
     //request for server 
     var request= new XMLHttpRequest();
