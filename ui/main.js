@@ -6,11 +6,12 @@ button.onclick = function(){
     request.onreadystatechange = function(){
         if(request.readystate === XMLHttpRequest.DONE){
             if(request.status===200){
-                var counter request.reponseText;
+                var counter= request.reponseText;
                 var span = document.getElementById('counter');
                 span.innerHTML = counter.toString();
             }
         }
+    };
         
 };
 //Submit button (name)
