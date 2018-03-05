@@ -2,7 +2,16 @@
 var button= document.getElementById('counter');
 button.onclick = function(){
     // Create Request for counter end piont
-  
+    var request = XMLHttpRequest();
+    request.onreadystatechange = function(){
+        if(request.readystate === XMLHttpRequest.DONE){
+            if(request.status===200){
+                var counter request.reponseText;
+                var span = document.getElementById('counter');
+                span.innerHTML = counter.toString();
+            }
+        }
+        
 };
 //Submit button (name)
 submit.onclick =function(){
