@@ -29,7 +29,7 @@ app.get('/test',function(req,res){
     //make select requ.
     
     //return response
-    pool.query('SELECT * FROM test',function(err,result){
+    Pool.query('SELECT * FROM test',function(err,result){
         if(err){
             res.status(500).send(err.toString());
         }
