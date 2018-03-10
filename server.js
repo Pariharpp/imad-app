@@ -32,7 +32,7 @@ function hash(input,salt){
     
 }    
 app.get('/hash/:input',function(req,res){
-    var hashedString = hash(req.params.input,'random-string-prahalad-parihar');
+    var hashedString = hash(req.params.input,'');
     res.send(hashedString);
 });
 var Pool= new Pool(config);
