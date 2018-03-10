@@ -16,9 +16,11 @@ body {
 
 .center {
     text-align: center;
-    padding-left:40px;
-    padding-right:40px;
+   /* padding-left:40px;
+    padding-right:40px;*/
     position:relative;
+    width:1000px;
+    height:500px;
 }
 
 .text-big {
