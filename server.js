@@ -24,7 +24,18 @@ app.get('/counter',function(req,res){
     counter=counter+1;
     res.send(counter.toString());
 });
+function hash(input,salt){
+    //create hash code
+    var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
+    return hashed.toString('hex');
+    
+}    
+app.get('/hash/:input',function(req,res){
+    var hashedString = hash(req.params.input,'random-String');
+    res.send(hashedString);
+});
 var Pool= new Pool(config);
+
 app.get('/test',function(req,res){
     //make select requ.
     
@@ -36,16 +47,8 @@ app.get('/test',function(req,res){
         else{
             res.send(JSON.stringify(result.rows));
         }
-    });
-function hash(input,salt){
-    //create hash code
-    var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
-    return hashed.toString('hex');
-    
-}    
-app.get('/hash/:input',function(req,res){
-    var hashedString = hash(req.params.input,'random-String');
-    res.send(hashedString);
+   
+   });
 });   
 
 app.get('/ankesh',function(req,res){
