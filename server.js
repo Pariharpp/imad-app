@@ -24,7 +24,7 @@ app.get('/counter',function(req,res){
     counter=counter+1;
     res.send(counter.toString());
 });
-var pool= new Pool(config);
+var Pool= new Pool(config);
 app.get('/test',function(req,res){
     //make select requ.
     
