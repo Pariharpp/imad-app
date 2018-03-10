@@ -24,6 +24,7 @@ app.get('/counter',function(req,res){
     counter=counter+1;
     res.send(counter.toString());
 });
+/*
 function hash(input,salt){
     //create hash code
     var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
@@ -33,7 +34,7 @@ function hash(input,salt){
 app.get('/hash/:input',function(req,res){
     var hashedString = hash(req.params.input,'this-is-some-random-string');
     res.send(hashedString);
-});
+});*/
 var Pool= new Pool(config);
 
 app.get('/test',function(req,res){
