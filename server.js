@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool= require('pg').Pool;
-var crypto = rquire('crypto');
+//var crypto = rquire('crypto');
 var config={
     user:'pariharprahalad26',
     database:'pariharprahalad26',
