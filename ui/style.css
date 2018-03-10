@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: sans-serif;
     background-color: lime;
     margin-top: 100px;
@@ -7,8 +7,6 @@ body {
     
 }
 .body{
-   /* padding-left:40px;
-    padding-right:40px;*/
     position:relative;
     width:1000px;
     height:500px;
@@ -16,8 +14,13 @@ body {
 
 .center {
     text-align: center;
-   /* padding-left:40px;
-    padding-right:40px;*/
+    position:relative;
+    width:1000px;
+    height:500px;
+    margin:0 auto;
+}*/
+#center{
+    text-align: center;
     position:relative;
     width:1000px;
     height:500px;
