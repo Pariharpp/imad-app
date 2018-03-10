@@ -47,9 +47,7 @@ app.get('/hash/:input',function(req,res){
     var hashedString = hash(req.params.input,'random-String');
     res.send(hashedString);
 });   
-    
-    
-});
+
 app.get('/ankesh',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'ankesh.html'));
 });
