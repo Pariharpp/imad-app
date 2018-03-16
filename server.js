@@ -93,7 +93,7 @@ app.get('/testdb',function(req,res){
     //return response
     Pool.query('SELECT * FROM test',function(err,result){
         if(err){
-            res.status(502).send(err.toString());
+            res.status(500).send(err.toString());
         }
         else{
             res.send('User successfully Created:'+username);
