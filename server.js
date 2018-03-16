@@ -147,10 +147,10 @@ app.get('/algo/recent',function(req,res){
    res.sendFile(path.join(__dirname, 'algo', 'recent.html'));
 });
 app.get('/algo/contantus',function(req,res){
-   res.sendFile(path.join(__dirname, 'algo', 'contactus.html'));
+   res.sendFile(path.join(__dirname, 'algo', 'contact.html'));
 });
 app.get('/algo/aboutus',function(req,res){
-   res.sendFile(path.join(__dirname, 'algo', 'aboutus.html'));
+   res.sendFile(path.join(__dirname, 'algo', 'about.html'));
 });
 
 
