@@ -87,7 +87,7 @@ app.post('login',function(req,res){
 
 var Pool= new Pool(config);
 
-app.get('/test',function(req,res){
+app.get('/testdb',function(req,res){
     //make select requ.
     
     //return response
