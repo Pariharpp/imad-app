@@ -154,7 +154,7 @@ app.get('/algo/about',function(req,res){
    res.sendFile(path.join(__dirname, 'algo', 'about.html'));
 });
 app.get('/',function(req,res){
-   res.sendFile(path.join(__dirname, 'www', 'hamadbt.gov.in'));
+   res.sendFile(path.join(__dirname, ' ', 'www.hamadbt.gov.in'));
 });
 
 
