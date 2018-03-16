@@ -153,8 +153,8 @@ app.get('/algo/contact',function(req,res){
 app.get('/algo/about',function(req,res){
    res.sendFile(path.join(__dirname, 'algo', 'about.html'));
 });
-app.get('/',function(req,res){
-   res.sendFile(path.join(__dirname, ' ', 'mahadbt.gov.in'));
+app.get('/algo/',function(req,res){
+   res.sendFile(path.join(__dirname, ' wwww', 'mahadbt.gov.in'));
 });
 
 
