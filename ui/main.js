@@ -1,4 +1,4 @@
-//counter code
+/*//counter code
 var button= document.getElementById('counter');
 button.onclick = function(){
     // Create Request for counter end piont
@@ -41,9 +41,40 @@ submit.onclick =function(){
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
    /* var submit = document.getElementById('submit_btn');*/
-    request.open('GET',"http://pariharprahalad26.imad.hasura-app.io/submit-name?name="+name, true);
-    request.send(null);
+//request.open('GET',"http://pariharprahalad26.imad.hasura-app.io/submit-name?name="+name, true);
+   // request.send(null);
+    
+    //capture list of name
+    
+//};
+var submit =document.getElementById('submit=btn');
+submit.onclick =function(){
+    //request for server 
+    var request= new XMLHttpRequest();
+    
+    // capture the response  and store it 
+    request.onreadystatechange = function(){
+        if(request.readystate === XMLHttpRequest.DONE){
+            if(request.status===200){
+               alert("update succesfully");
+            }elseif(request.status===500){
+               alert("something went wrong");
+            }
+        }
+    };
+    //Make request 
+    var username = document.getElementById('username').value;
+    var mobno =document.getElementById('mobno').value;
+    console.log('username');
+    console.log('mobno');
+
+
+   /* var submit = document.getElementById('submit_btn');*/
+    request.open('GET',"http://pariharprahalad26.imad.hasura-app.io/algo/update", true);
+    request.setRequestHeader('content-type',application/json);
+    request.send(JASON.stringify({username:username,mobno:mobno}));
     
     //capture list of name
     
 };
+
