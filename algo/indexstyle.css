@@ -1,6 +1,6 @@
 body
 {
- background:url("home.png")  no-repeat;
+ background:url(" ")  no-repeat;
  background-size:cover;	
 }
 ul 
@@ -43,6 +43,8 @@ form
 {
 	display:block;
 	
+.textt{
+    
 }
 footer{
 	background:gray;
