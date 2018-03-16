@@ -43,8 +43,8 @@ form
 {
 	display:block;
 	
-.textt{
-    
+#textt{
+    font-family:Courier New;
 }
 footer{
 	background:gray;
