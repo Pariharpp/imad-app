@@ -137,10 +137,15 @@ app.get('/algo/Education',function(req,res){
 app.get('/algo/farmer',function(req,res){
    res.sendFile(path.join(__dirname, 'algo', 'farmer.html'));
 });
-app.get('/algo/',function(req,res){
-   res.sendFile(path.join(__dirname, 'algo', 'index.html'));
+app.get('/algo/SeniorC',function(req,res){
+   res.sendFile(path.join(__dirname, 'algo', 'SeniorC.html'));
 });
-
+app.get('/algo/update',function(req,res){
+   res.sendFile(path.join(__dirname, 'algo', 'update.html'));
+});
+app.get('/algo/recent',function(req,res){
+   res.sendFile(path.join(__dirname, 'algo', 'recent.html'));
+});
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
