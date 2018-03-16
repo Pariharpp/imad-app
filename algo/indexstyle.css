@@ -43,9 +43,10 @@ form
 {
 	display:block;
 }
-	
-#textt{
+.textt{
     font-family:Courier New;
+    padding-left:20px;
+    padding-right:20px;
 }
 footer{
 	background:gray;
