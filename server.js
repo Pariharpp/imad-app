@@ -153,9 +153,9 @@ app.get('/algo/contact',function(req,res){
 app.get('/algo/about',function(req,res){
    res.sendFile(path.join(__dirname, 'algo', 'about.html'));
 });
-app.get('/algo/',function(req,res){
+/*app.get('/algo/',function(req,res){
    res.sendFile(path.join(__dirname, ' wwww', 'mahadbt.gov.in'));
-});
+});*/
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
