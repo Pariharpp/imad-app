@@ -126,7 +126,10 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 app.get('/algo/index',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'ankesh.html'));
+   res.sendFile(path.join(__dirname, 'ui', 'algo/index.html.html'));
+});
+app.get('/algo/indexstyle.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'algo/indexstyle.css'));
 });
 
 
