@@ -46,6 +46,9 @@ form
     font-family:Courier New;
     margin:0 auto;
 }
+.imag{
+    float :right;
+}
 footer{
 	background:gray;
 }
