@@ -49,6 +49,12 @@ form
 .imag{
     float :right;
 }
+.imag1{
+    float:left;
+}
+.imag2{
+    float:none ;
+}
 footer{
 	background:gray;
 }
